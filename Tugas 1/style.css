@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    /*Warna*/
+    --warna-dasar: #3c516d;
+    --warna-putih: #ffff;
+    --biru-muda: #6baaff;
+    --warna-tua: #374a65;
+    --kuning: #ffa600;
+    --biru-gelap: #2c3c52;
+    
+    /*Ukuran Font*/
+    --font-size-s: 24px;
+    --font-size-n: 28px;
+    --font-size-m: 30px;
+    --font-size-l: 32px;
+    --font-size-xl: 36px;
+    --font-size-xxl: 64px;
+    
+    /*Tebal Font*/
+    --font-weight-n: 400;
+    --font-weight-m: 500;
+    --font-weight-sb: 600;
+    --font-weight-b: 700;
+    
+    /*Radius border*/
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    /*site max width*/
+    --site-max-width: 1300px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img{
+    width: 150%;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--warna-dasar);
+}
+
+header .navbar{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.college-section .section-content .title-college {
+    text-align: center;
+    position: relative;
+}
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+.navbar .nav-logo .logo-text{
+    color: var(--warna-putih);
+    font-size: (--font-size-xl);
+    font-weight: var(--font-weight-sb);
+    transition: 0.3s ease;
+}
+
+.navbar .nav-logo .logo-text:hover{
+    color:var(--kuning);
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 25px;
+}
+.navbar .nav-menu .nav-link{
+    font-size: var(--border-radius-n);
+    color: var(--warna-putih);
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover{
+    color: var(--kuning);
+}
+
+
+.navbar #menu-close-button,
+.navbar #menu-open-button {
+    display: none;
+}
+
+.hero-section{
+    min-height: 100vh;
+    background-color: var(--warna-dasar);
+}
+
+.hero-section .section-content{
+    display: flex;
+    align-items:center;
+    gap: 25px;
+    min-height: 100vh;
+    color: var(--warna-putih);
+    justify-content: space-between;
+}
+.hero-section .hero-details{
+    margin-left: 30px;
+}
+.hero-section .hero-details .title{
+    font-size: var(--font-size-xxl);
+    font-weight: 100;
+    max-width: 150%;
+    text-shadow: 0 0 10px var(--kuning);
+    color: var(--kuning);
+    font-family: "Caprasimo";
+}
+
+.hero-section .hero-details .opening{
+    margin-top: 10px;
+    max-width: 100%;
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-n);
+    font-family:"Inter";
+}
+
+.hero-section .hero-details .subtitle{
+    max-width: 90%;
+    margin: 24px 0 24px;
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-n);
+    font-family:"Inter";
+}
+
+.hero-section .fotoganteng1{
+    max-width: 500px;
+    margin-right: 30px;
+}
+.hero-section .fotoganteng1 img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 0 50px var(--biru-muda);
+    background-image: radial-gradient(ellipse at 5% 10%, var(--biru-muda), var(--warna-tua));
+}
+
+/*About Section*/
+.about-section{
+    padding: 120px 0;
+    background: var(--biru-gelap);
+}
+.about-section .section-content{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .fotoganteng2 img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 0 50px var(--biru-muda);
+    background-image: radial-gradient(ellipse at 5% 10%, var(--biru-muda), var(--warna-tua));
+    border: 5px solid var(--kuning);
+}
+
+.about-section .about-details .about-title{
+    align-items: center;
+    color: var(--kuning);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-n);
+    font-family: "Caprasimo";
+    max-width: 500px;
+}
+.about-section .about-details .name, .nimKom, .desc, .motto{
+    font-family: "Inter";
+}
+.about-section .about-details .name{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-sb);
+    color: var(--warna-putih);
+}
+
+.about-section .about-details .nimKom{
+    margin-top: 2px;
+    margin-bottom: 15px;
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-n);
+    color: var(--warna-putih);
+}
+.about-section .about-details .desc{
+    margin-bottom: 5px;
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-n);
+    color: var(--warna-putih);
+}
+.about-section .about-details .motto{
+    margin-top: 15px;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-sb);
+    color: var(--kuning);
+    font-style: italic;
+}
+
+/*College Section*/
+.college-section{
+    background: var(--warna-tua);
+}
+.college-section .section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 20px 50px;
+    color: var(--warna-putih);
+    text-align: center;
+}
+
+.college-section .section-content .college-details{
+    margin-left: 10px;
+    margin-top: 30px;
+    padding-top: 2px;
+}
+.college-section .section-content .title-college{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 80px;
+}
+.college-section .section-content .college-title{
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-n);
+    color: var(--kuning);
+    font-family: "Caprasimo";
+    margin-bottom: 0;
+}
+.college-section .section-content .college-subtitle{
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-n);
+    color: var(--warna-putih);
+    margin-bottom: 20px;
+    font-family: "Inter";
+}
+.college-section .section-content .description{
+    font-size: 28px;
+    margin-left: 30px;
+    font-weight: var(--font-weight-n);
+    color: var(--warna-putih);
+    font-family: "Inter";
+    text-align: left;
+}
+
+.college-section .section-content .title-college img{
+    width: 320px;
+    height: 320px;
+    margin-top: 25px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 5px 18px var(--biru-muda);
+}
+.college-section .section-content .schedule-title{
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-n);
+    color: var(--kuning);
+    font-family: "Caprasimo";
+    text-align: center;
+}
+.table-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--biru-gelap);
+    box-shadow: 0 2px 10px var(--warna-tua);
+    border-radius: var(--border-radius-s);
+    overflow: hidden;
+}
+.college-section .section-content .class-section .table-schedule:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 30px var(--biru-gelap);    
+}
+
+.table-schedule th, .table-schedule td {
+    border: 1px solid var(--warna-tua);
+    padding: 8px 12px;
+    text-align: center;
+    color: var(--warna-putih);
+}
+.table-schedule th {
+    background: var(--biru-muda);
+    color: #222;
+}
+
+/*project section*/
+.project-section .project-content{
+    background-color: var(--warna-dasar);
+}
+.project-section .project-content .project-header{
+    background: var(--warna-dasar);
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+.project-section .project-content .project-opening{
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.project-section .project-content .project-title{
+    font-size: var(--font-size-xl);
+    margin: 15px auto;
+    font-weight: var(--font-weight-n);
+    color: var(--kuning);
+    font-family: "Caprasimo";
+    text-align: left;
+}
+.project-section .project-content .project-description{
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-n);
+    color: var(--warna-putih);
+    margin-top: 10px;
+    font-family: "Inter";
+    text-align: left;
+}
+.project-section .project-content .fotoganteng3 img{
+    width: 300px;
+    height: 300px;
+    margin-top: 85px;
+    margin-bottom: 0;
+    margin-left: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 30px var(--biru-muda);
+    background-image: radial-gradient(ellipse at 5% 10%, var(--biru-muda), var(--warna-tua));
+}
+.project-section .project-content .project-gallery{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--warna-dasar);
+}
+.project-section .project-content .project-gallery .project1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.project-section .project-content .project-gallery .project1 img{
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    width: 550px;
+    height: 350px;
+    max-width: 400px;
+    max-height: 250px;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px var(--biru-muda);
+    background-image: radial-gradient(ellipse at 5% 10%, var(--biru-muda), var(--warna-tua));
+}
+.project-section .project-content .project-gallery .project2 img{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 550px;
+    height: 350px;
+    max-width: 400px;
+    max-height: 250px;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px var(--biru-muda);
+    background-image: radial-gradient(ellipse at 5% 10%, var(--biru-muda), var(--warna-tua));
+}
+.project-section .project-content .project-gallery .project1:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.project-section .project-content .project-gallery .project1 .project1-title{
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-n);
+    color: var(--warna-putih);
+    font-family: "Caprasimo";
+    text-align: left;
+    margin-top: 50px;
+}
+.project-section .project-content .project-gallery .project1 .project1-subtitle{
+    margin-top: 10px;
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-n);
+    color: var(--warna-putih);
+    font-family: "Inter";
+    text-align: left;
+}
+.project-section .project-content .project-gallery .project2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 10px;
+}
+.project-section .project-content .project-gallery .project2:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.project-section .project-content .project-gallery .project2 .project2-description .project2-title{
+    font-size: var(--font-size-m);
+    margin-top: 20px;
+    font-weight: var(--font-weight-n);
+    color: var(--warna-putih);
+    margin-top: 50px;
+    font-family: "Caprasimo";
+    text-align: left;
+}
+.project-section .project-content .project-gallery .project2 .project2-subtitle{
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-n);
+    color: var(--warna-putih);
+    font-family: "Inter";
+    text-align: left;
+}
+.contact-section{
+    background-color: var(--warna-dasar);
+    box-shadow: 0 1px 20px black;
+}
+.contact-section .contact-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    gap: 20px;
+    padding: 34px 20px;
+    color: var(--warna-putih);
+    text-align: center;
+}
+.contact-section .contact-content .contact-title{
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-n);
+    color: var(--warna-putih);
+    font-family: "Caprasimo";
+    margin-top: -58px;
+    padding: 15px;
+    border-radius: 100px;
+    background: var(--warna-tua);
+    box-shadow: 0 0 10px black;
+}
+.contact-section .contact-content .social-media{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+}
+.contact-section .contact-content .social-media a{
+    color: var(--warna-putih);
+    padding: 5px;
+    border-radius: var(--border-radius-circle);
+    box-shadow: 0 0 10px black;
+}
+.contact-section .contact-content .social-media a:hover{
+    background: var(--warna-tua);
+    color: var(--kuning);
+    box-shadow: 0 0 20px var(--kuning);
+    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/*Responsive*/
+@media screen and (max-width: 900px){
+    :root{
+        --font-size-n: 10px;
+        --font-size-m: 15px;
+        --font-size-l: 25px;
+        --font-size-xl: 25px;
+        --font-size-xxl: 40px;
+    }
+
+    body.show-mobile-menu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar #menu-close-button,
+    .navbar #menu-open-button {
+        display: block;
+        font-size: var(--font-size-n);
+    }
+
+    .navbar #menu-close-button{
+        color: var(--warna-putih);
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .navbar #menu-open-button{
+        color:var(--warna-putih);
+    }
+
+    .navbar .nav-menu{
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height:100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        font-size: 28px;
+        font-family: "Inter";
+        font-weight: var(--font-weight-n);
+        color: var(--warna-putih);
+        background: var(--warna-dasar);
+        transition: left 0.3s;
+        display: flex;
+    }
+
+    body.show-mobile-menu .navbar .nav-menu {
+        left: 0;
+    }
+
+    .navbar .nav-menu .nav-link{
+        color: var(--warna-putih);
+        display: block;
+        margin-top: 25px;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: var(--font-weight-n);
+        font-family: "Inter";
+        text-align: center;
+        padding: 30px 20px 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: var(--warna-tua);
+        box-shadow: 0 0 20px var(--biru-gelap);
+    }
+
+    .hero-section .section-content{
+        gap: 20px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .hero-section .hero-details :is(.subtitle, .opening){
+        max-width: 100%;
+    }
+
+    .hero-section .fotoganteng1{
+        max-width: 270px;
+        margin-right: 120px;
+        margin-top: 75px;
+    }
+    .about-section .section-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .about-section .section-content .fotoganteng2{
+        margin: 0 auto 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-section .about-details {
+        text-align: center;
+    }
+    .about-section .about-details .about-title{
+        margin: 0 auto 20px auto;
+        text-align: center;
+        font-size: 35px;
+    }
+    .about-section .about-details .name{
+        font-size: 25px;
+    }
+    .about-section .about-details .nimKom{
+        font-size: 20px;
+    }
+    .about-section .about-details .desc{
+        font-size: 22px;
+    }
+    .about-section .about-details .motto{
+        font-size: 25px;
+    }
+    .college-section .section-content .title-college {
+        gap: 20px;
+    }
+    .college-section .section-content .college-details .college-title{
+        font-size: 35px;
+    }
+    .college-section .section-content .college-details .college-subtitle{
+        font-size: 18px;
+    }
+    .college-section .section-content .college-details .description{
+        font-size: 20px;
+        margin-left: 0;
+        text-align: left;
+    }
+    .project-section .project-content .project-header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+    }
+    .project-section .project-content .project-opening{
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .project-section .project-content .project-header .fotoganteng3{
+        max-width: 200px;
+        margin-right: 120px;
+        margin-top: 75px;
+        margin-bottom: 20px;
+    }
+    .project-section .project-content .project-gallery{
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--warna-dasar);
+    }
+    .project-section .project-content .project-gallery .project1{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .project-section .project-content .project-gallery .project1 .project1-description .project-title{
+        font-size: 25px;
+    }
+    .project-section .project-content .project-gallery .project1 .project1-description .project1-subtitle{
+        font-size: 18px;
+    }
+    .project-section .project-content .project-gallery .project2 {
+        display: flex;
+        gap: 20px;
+    }
+    .project-section .project-content .project-gallery .project2 .pjt2photo{
+        margin-left: 20px;
+    }
+
+    .project-section .project-content .project-gallery .project1 .pjt1photo{
+        align-items: center;
+        justify-content: center;
+        margin-right: 100px;
+    }
+    .project-section .project-content .project-gallery .project1 .project1-description{
+        text-align: center;
+    }
+    .project-section .project-content .project-gallery .project1 .project1-description .project1-title, .project1-subtitle{
+        align-items: center;
+        text-align: center;
+    }
+    .project-section .project-content .project-gallery .project2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .project-section .project-content .project-gallery .project2 .pjt2photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+    .project-section .project-content .project-gallery .project2 .project2-description{
+        text-align: center;
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+    .project-section .project-content .project-gallery .project2 .project2-description .project2-title{
+        align-items: center;
+        text-align: center;
+        font-size: 28px;
+    }
+        .project-section .project-content .project-gallery .project2 .project2-description .project2-subtitle{
+        align-items: center;
+        font-size: 20px;
+    }
+    .contact-section .contact-content{
+        padding: 20px 20px 30px;
+    }
+}
