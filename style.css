@@ -10,7 +10,7 @@
 :root{
     /*Warna*/
     --warna-dasar: #3c516d;
-    --warna-putih: #ffff;
+    --warna-putih: #ffffff;
     --biru-muda: #6baaff;
     --warna-tua: #374a65;
     --kuning: #ffa600;
@@ -39,7 +39,7 @@
     --site-max-width: 1300px;
 }
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;         
 }
 
 ul{
@@ -86,7 +86,7 @@ header .navbar{
 }
 .navbar .nav-logo .logo-text{
     color: var(--warna-putih);
-    font-size: (--font-size-xl);
+    font-size: 30px;
     font-weight: var(--font-weight-sb);
     transition: 0.3s ease;
 }
@@ -100,7 +100,7 @@ header .navbar{
     gap: 25px;
 }
 .navbar .nav-menu .nav-link{
-    font-size: var(--border-radius-n);
+    font-size: 20px;
     color: var(--warna-putih);
     transition: 0.3s ease;
 }
@@ -109,7 +109,6 @@ header .navbar{
     color: var(--kuning);
 }
 
-
 .navbar #menu-close-button,
 .navbar #menu-open-button {
     display: none;
@@ -117,7 +116,7 @@ header .navbar{
 
 .hero-section{
     min-height: 100vh;
-    background-color: var(--warna-dasar);
+    background-color: var(--biru-gelap);
 }
 
 .hero-section .section-content{
@@ -246,7 +245,7 @@ header .navbar{
 }
 
 .college-section .section-content .college-details{
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 30px;
     padding-top: 2px;
 }
@@ -257,7 +256,7 @@ header .navbar{
     gap: 80px;
 }
 .college-section .section-content .college-title{
-    font-size: var(--font-size-xl);
+    font-size: 45px;
     font-weight: var(--font-weight-n);
     color: var(--kuning);
     font-family: "Caprasimo";
@@ -271,7 +270,7 @@ header .navbar{
     font-family: "Inter";
 }
 .college-section .section-content .description{
-    font-size: 28px;
+    font-size: 20px;
     margin-left: 30px;
     font-weight: var(--font-weight-n);
     color: var(--warna-putih);
@@ -283,6 +282,7 @@ header .navbar{
     width: 320px;
     height: 320px;
     margin-top: 25px;
+    margin-left: 30px;
     object-fit: cover;
     object-position: center;
     display: block;
@@ -304,6 +304,7 @@ header .navbar{
     box-shadow: 0 2px 10px var(--warna-tua);
     border-radius: var(--border-radius-s);
     overflow: hidden;
+    box-shadow: 0 0 30px var(--biru-gelap); 
 }
 .college-section .section-content .class-section .table-schedule:hover{
     transform: scale(1.02);
@@ -367,60 +368,47 @@ header .navbar{
     box-shadow: 0 0 30px var(--biru-muda);
     background-image: radial-gradient(ellipse at 5% 10%, var(--biru-muda), var(--warna-tua));
 }
-.project-section .project-content .project-gallery{
-    gap: 30px;
+    .project-section .project-content .project-gallery{
+    margin-top: 10px;
+    gap: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--warna-dasar);
 }
-.project-section .project-content .project-gallery .project1{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 20px;
-}
 
-.project-section .project-content .project-gallery .project1 img{
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-bottom: 30px;
-    width: 550px;
-    height: 350px;
-    max-width: 400px;
-    max-height: 250px;
-    object-fit: cover;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 20px var(--biru-muda);
-    background-image: radial-gradient(ellipse at 5% 10%, var(--biru-muda), var(--warna-tua));
+.project-section .project-content .project-gallery .project1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
-.project-section .project-content .project-gallery .project2 img{
-    margin-top: 10px;
-    margin-bottom: 30px;
-    width: 550px;
-    height: 350px;
-    max-width: 400px;
-    max-height: 250px;
-    object-fit: cover;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 20px var(--biru-muda);
-    background-image: radial-gradient(ellipse at 5% 10%, var(--biru-muda), var(--warna-tua));
+.project-section .project-content .project-gallery .project1 .project1-description{
+    color: var(--warna-putih);
+    font-size: 20px;
+    flex-wrap: wrap;
 }
-.project-section .project-content .project-gallery .project1:hover{
+.project-section .project-content .project-gallery .project1 .pjt1photo:hover{
     transform: scale(1.05);
     transition: transform 0.3s ease;
+}
+
+.project-section .project-content .project-gallery .project1 .pjt1photo img{
+    width: 480px;
+    height: 280px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1.5);
+    margin-left: 20px;
+    margin-right: 5px;
+    
 }
 .project-section .project-content .project-gallery .project1 .project1-title{
     font-size: var(--font-size-l);
     font-weight: var(--font-weight-n);
-    color: var(--warna-putih);
+    color: var(--kuning);
     font-family: "Caprasimo";
     text-align: left;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .project-section .project-content .project-gallery .project1 .project1-subtitle{
     margin-top: 10px;
@@ -430,33 +418,46 @@ header .navbar{
     font-family: "Inter";
     text-align: left;
 }
-.project-section .project-content .project-gallery .project2{
+.project-section .project-content .project-gallery .project2 {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
 }
-.project-section .project-content .project-gallery .project2:hover{
+.project-section .project-content .project-gallery .project2 .project2-description{
+    color: var(--warna-putih);
+    font-size: 20px;
+}
+
+.project-section .project-content .project-gallery .project2 .pjt2photo img{
+    width: 510px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1.5);
+    margin-left: 20px;
+
+}
+.project-section .project-content .project-gallery .project2 .pjt2photo:hover{
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
-.project-section .project-content .project-gallery .project2 .project2-description .project2-title{
-    font-size: var(--font-size-m);
-    margin-top: 20px;
+.project-section .project-content .project-gallery .project2 .project2-title{
+    font-size: var(--font-size-l);
     font-weight: var(--font-weight-n);
-    color: var(--warna-putih);
-    margin-top: 50px;
+    color: var(--kuning);
     font-family: "Caprasimo";
     text-align: left;
+    margin-top: 20px;
 }
 .project-section .project-content .project-gallery .project2 .project2-subtitle{
+    margin-top: 10px;
     font-size: var(--font-size-s);
     font-weight: var(--font-weight-n);
     color: var(--warna-putih);
     font-family: "Inter";
     text-align: left;
 }
+
 .contact-section{
     background-color: var(--warna-dasar);
     box-shadow: 0 1px 20px black;
@@ -474,7 +475,7 @@ header .navbar{
 .contact-section .contact-content .contact-title{
     font-size: var(--font-size-s);
     font-weight: var(--font-weight-n);
-    color: var(--warna-putih);
+    color: var(--kuning);
     font-family: "Caprasimo";
     margin-top: -58px;
     padding: 15px;
@@ -503,13 +504,18 @@ header .navbar{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 /*Responsive*/
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1024px){
     :root{
         --font-size-n: 10px;
         --font-size-m: 15px;
         --font-size-l: 25px;
         --font-size-xl: 25px;
         --font-size-xxl: 40px;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
     body.show-mobile-menu header::before {
@@ -633,6 +639,10 @@ header .navbar{
     .college-section .section-content .title-college {
         gap: 20px;
     }
+    .college-section .section-content .title-college .foto3 img{
+        width: 250px;
+        height: 250px;
+    }
     .college-section .section-content .college-details .college-title{
         font-size: 35px;
     }
@@ -640,9 +650,10 @@ header .navbar{
         font-size: 18px;
     }
     .college-section .section-content .college-details .description{
-        font-size: 20px;
-        margin-left: 0;
+        font-size: 16px;
+        margin-left: auto;
         text-align: left;
+        flex-wrap: wrap;
     }
     .project-section .project-content .project-header{
         display: flex;
@@ -650,7 +661,7 @@ header .navbar{
         align-items: center;
         justify-content: center;
         text-align: center;
-        gap: 50px;
+        gap: 20px;
     }
     .project-section .project-content .project-opening{
         margin-left: 20px;
@@ -665,6 +676,7 @@ header .navbar{
     }
     .project-section .project-content .project-gallery{
         gap: 30px;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -672,16 +684,21 @@ header .navbar{
     }
     .project-section .project-content .project-gallery .project1{
         display: flex;
-        gap: 20px;
+        gap: 5px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .project-section .project-content .project-gallery .project1 .project1-description .project-title{
-        font-size: 25px;
+    .project-section .project-content .project-gallery .project1 .project1-description .project1-title{
+        font-size:30px;
+        align-items: center;
+        text-align: center;
     }
     .project-section .project-content .project-gallery .project1 .project1-description .project1-subtitle{
-        font-size: 18px;
+        font-size:20px;
+        margin-bottom: 20px;
+        align-items: center;
+        text-align: center;
     }
     .project-section .project-content .project-gallery .project2 {
         display: flex;
@@ -690,19 +707,6 @@ header .navbar{
     .project-section .project-content .project-gallery .project2 .pjt2photo{
         margin-left: 20px;
     }
-
-    .project-section .project-content .project-gallery .project1 .pjt1photo{
-        align-items: center;
-        justify-content: center;
-        margin-right: 100px;
-    }
-    .project-section .project-content .project-gallery .project1 .project1-description{
-        text-align: center;
-    }
-    .project-section .project-content .project-gallery .project1 .project1-description .project1-title, .project1-subtitle{
-        align-items: center;
-        text-align: center;
-    }
     .project-section .project-content .project-gallery .project2{
         display: flex;
         flex-direction: column;
@@ -710,12 +714,6 @@ header .navbar{
         justify-content: center;
     }
     
-    .project-section .project-content .project-gallery .project2 .pjt2photo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2px;
-    }
     .project-section .project-content .project-gallery .project2 .project2-description{
         text-align: center;
         margin-top: -50px;
@@ -724,7 +722,7 @@ header .navbar{
     .project-section .project-content .project-gallery .project2 .project2-description .project2-title{
         align-items: center;
         text-align: center;
-        font-size: 28px;
+        font-size: 30px;
     }
         .project-section .project-content .project-gallery .project2 .project2-description .project2-subtitle{
         align-items: center;
