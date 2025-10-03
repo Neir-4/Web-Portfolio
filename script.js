@@ -7,6 +7,6 @@ menuOpenButton.addEventListener("click", () => {
 });
 
 navLinks.forEach(link => {
-    link.addEventListener("click", () => { menuOpenButton.click() });
-})
+    link.addEventListener("click", () => { menuOpenButton.click() });   
+});
 menuCloseButton.addEventListener("click", () => menuOpenButton.click());
